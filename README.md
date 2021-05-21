@@ -11,10 +11,10 @@
 ## For VM options :--module-path ${PATH_TO_JAVAFX} --add-modules javafx.controls,javafx.fxml,javafx.media ;${PATH_TO_JAVAFX} - path to JavaFX library 
  
 #Main Menu
-![](Images/FirstMenu.PNG)
+![](src/Images/FirstMenu.PNG)
 #Game Menu
-![](Images/SecondMenu.PNG)
+![](src/Images/SecondMenu.PNG)
 #Result Page
-![](Images/ResultPage.PNG)
+![](src/Images/ResultPage.PNG)
 #
 ## Author: Ozar Aini
