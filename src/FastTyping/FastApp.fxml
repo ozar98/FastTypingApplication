@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="900.0" styleClass="LPbackground" stylesheets="@LPcss.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FastTyping.AppController">
+    <top>
+        <AnchorPane prefHeight="138.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox layoutX="336.0" layoutY="14.0">
+                    <children>
+                        <ImageView fitHeight="48.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/keyboard.png" />
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </ImageView>
+                        <Label prefHeight="54.0" prefWidth="276.0" text="Fast Typing App" textFill="WHITE">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </Label>
+                    </children>
+                </HBox>
+                <Label fx:id="timeLabel" alignment="CENTER" layoutX="533.0" layoutY="73.0" prefHeight="58.0" prefWidth="140.0" text="00:00" textFill="WHITE">
+                    <font>
+                        <Font size="51.0" />
+                    </font>
+                </Label>
+            <ChoiceBox fx:id="lessonChoiceBox" layoutX="227.0" layoutY="98.0" opacity="0.75" prefWidth="150.0" />
+            <Button fx:id="startButton" layoutX="467.0" layoutY="97.0" mnemonicParsing="false" onAction="#startTest" text="Start!" />
+            <HBox layoutX="14.0" layoutY="38.0" prefHeight="83.0" prefWidth="258.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Languages" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin></Label>
+                        <RadioButton fx:id="russianRadioButton" mnemonicParsing="false" text="Russian" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleLanguageGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="englishRadioButton" mnemonicParsing="false" text="English" textFill="WHITE" toggleGroup="$toggleLanguageGroup">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin></RadioButton>
+                        <RadioButton fx:id="tajikRadioButton" mnemonicParsing="false" text="Tajik" textFill="WHITE" toggleGroup="$toggleLanguageGroup">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="kyrgyzRadioButton" mnemonicParsing="false" text="Kyrgyz" textFill="WHITE" toggleGroup="$toggleLanguageGroup">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Difficulties" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin></Label>
+                        <RadioButton fx:id="easyRadioButton" mnemonicParsing="false" text="Easy" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleDifficultyGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="mediumRadioButton" mnemonicParsing="false" text="Medium" textFill="WHITE" toggleGroup="$toggleDifficultyGroup">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="difficultRadioButton" mnemonicParsing="false" text="Difficult" textFill="WHITE" toggleGroup="$toggleDifficultyGroup" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+                <MenuBar fx:id="menuBar" stylesheets="@LPcss.css">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="exitMenuID" mnemonicParsing="false" onAction="#exitMenu" text="Exit" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#aboutMenu" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="106.0" prefWidth="900.0" style="-fx-background-color: eee;" styleClass="LPbackground" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="abortButton" layoutX="386.0" layoutY="30.0" onAction="#goToMainPage" prefHeight="46.0" prefWidth="127.0" styleClass="backspace" stylesheets="@LPcss.css" text="Cancel Test" />
+            <Button fx:id="exitButton" layoutX="743.0" layoutY="34.0" onAction="#exit" prefHeight="38.0" prefWidth="116.0" styleClass="exitButton" stylesheets="@LPcss.css" text="Exit" />
+            </children></AnchorPane>
+    </bottom>
+    <left>
+        <AnchorPane prefHeight="374.0" prefWidth="115.0" style="-fx-background-color: eee;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="resultButton" layoutX="32.0" layoutY="196.0" mnemonicParsing="false" onAction="#switchSceneToResult" opacity="0.0" text="GoToResult" />
+            </children></AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="374.0" prefWidth="124.0" style="-fx-background-color: eee;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="timerButton" layoutX="91.0" layoutY="203.0" mnemonicParsing="false" opacity="0.04" prefHeight="0.0" prefWidth="2.0" text="timerSOS" />
+            </children></AnchorPane>
+    </right>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: eee;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #AAA; -fx-border-radius: 20;">
+                    <children>
+                        <HBox prefHeight="49.0" prefWidth="659.0" styleClass="testBlockHbox">
+                            <children>
+                                <Label fx:id="timeRemain" prefHeight="56.0" prefWidth="610.0" text="You have 1 minute to complete typing this text">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                        <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#restartTest" prefHeight="46.0" prefWidth="51.0" styleClass="refreshButton" stylesheets="@LPcss.css" text="⟳" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </HBox>
+                        <TextArea fx:id="textDisplay" editable="false" prefHeight="367.0" prefWidth="659.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </TextArea>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

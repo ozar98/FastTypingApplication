@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FinalProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FinalProject_jar</output-path>
+    <root id="archive" name="FinalProject.jar">
+      <element id="module-output" name="FinalProject" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PATH_TO_JAVAFX$/javafx.graphics.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

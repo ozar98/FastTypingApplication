@@ -1,0 +1,179 @@
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: #a19d9d;
+}
+.button{
+    -fx-border-color: #ffffff;
+    -fx-text-fill: white;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent;
+}
+.button:hover{
+    -fx-border-color: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2F80FF;
+}
+.subpane{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+.LPbackground {
+    -fx-background-image: url("LPGradient.jpg");
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+
+}
+
+
+
+.refreshButton{
+    -fx-text-fill: white;
+    -fx-background-color: #000000;
+    -fx-border-color: #E5E0F0;
+    -fx-border-radius: 8px;
+}
+.refreshButton:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #000000;
+    -fx-border-color: #E5E0F0;
+    -fx-border-radius: 8px;
+
+}
+.menu-bar{
+    -fx-background-color: #FF9304;
+    -fx-text-fill: white;
+}
+.menu-bar:hover{
+    -fx-background-color: #FF9304;
+    -fx-text-fill: white;
+
+}
+.learnTypingButton{
+    -fx-font-weight: bold;
+}
+
+
+.HomeButton, .HomeButton:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #FF8000;
+    -fx-border-color: #f1c40f;
+}
+.lessonButton, .lessonButton:hover{
+    -fx-text-fill: brown;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+    -fx-font-weight: bold;
+}
+.goBack, .goBack:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #2F80FF;
+    -fx-border-color: none;
+    -fx-font-weight: bold;
+}
+.testBlockHbox{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #a19d9d;
+}
+
+/*  */
+
+
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: #a19d9d;
+}
+
+.background {
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+}
+.lessonChoiceBox{
+    -fx-background-color: white;
+    -fx-border-color: #2F80FF;
+
+}
+.keyboardButton{
+    -fx-background-color: white;
+    -fx-text-fill: #56CCF2;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.backspace{
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.greenKeys{
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.blueKeys{
+    -fx-background-color: #56CCF2;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.yellowKeys{
+    -fx-background-color: #f1c40f;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.homeKeys{
+    -fx-background-color: white;
+    -fx-text-fill: #56CCF2;
+    -fx-border-color: #f1c40f;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+}
+.exitButton{
+    -fx-text-fill: white;
+    -fx-background-color: #4D0BFF;
+    -fx-border-color: #4D0BFF;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+}
+.HomeButton{
+    -fx-text-fill: white;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+}
+.playAgainButton{
+    -fx-text-fill: white;
+    -fx-background-color: #005EFF;
+    -fx-border-color: #2A4470;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+}
+
+#warn{
+    -fx-background-color: #ffcdd2;
+}
+#normal{
+
+}
+
